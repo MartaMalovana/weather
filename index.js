@@ -45,7 +45,7 @@
     function getIcon (number) {
         const promise = new Promise(async (resolve, reject) => {
             try {
-                const response = await fetch(`http://openweathermap.org/img/w/${number}.png`);
+                const response = await fetch(`https://openweathermap.org/img/w/${number}.png`);
                 if(response) {
                     resolve(response.blob());
                 };    
