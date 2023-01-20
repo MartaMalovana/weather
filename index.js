@@ -2,7 +2,7 @@
     // Create promise with fetch weather for Lviv city
     const promise = new Promise(async (resolve, reject) => {
         try {
-            const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=5d066958a60d315387d9492393935c19');
+            const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=5d066958a60d315387d9492393935c19');
             if(response) {
                 resolve(response.json());
             };    
